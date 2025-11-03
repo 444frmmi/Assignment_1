@@ -8,9 +8,9 @@
 **Base URL:** `https://assignment-1-1-1mvy.onrender.com`
 
 API นี้ออกแบบมาเพื่อ:
-- ดึงข้อมูลการตั้งค่าของโดรนแต่ละตัว
-- ตรวจสอบสถานะปัจจุบันของโดรน
-- บันทึกข้อมูล log อุณหภูมิ สถานที่ และชื่อโดรน
+- ดึงข้อมูลการตั้งค่าของโดรนแต่ละตัว (config)
+- ตรวจสอบสถานะปัจจุบันของโดรน (status)
+- บันทึกข้อมูล log อุณหภูมิ สถานที่ และชื่อโดรน (log)
 
 ---
 
@@ -42,7 +42,12 @@ API นี้ออกแบบมาเพื่อ:
 
 ## การติดตั้งและรัน (Local)
 
-1.  **Clone & Install:**
+ตรวจสอบว่า Node และ npm พร้อมใช้งาน:
+
+node -v
+npm -v
+
+1.  **Install Dependencies:**
     ```bash
     git clone https://github.com/444frmmi/Assignment_1.git
     cd Assignment_1
