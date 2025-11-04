@@ -1,4 +1,6 @@
-# Drone API Server
+#  Assignment 1
+
+## Drone API Server
 
 ระบบ API สำหรับบริหารจัดการข้อมูลและบันทึกการทำงานของโดรน
 พัฒนาโดยใช้ Node.js + Express.js เพื่อรองรับการเชื่อมต่อจากอุปกรณ์โดรนจริง และระบบบันทึกข้อมูลบน Cloud
@@ -7,31 +9,33 @@
 
 **Base URL:** `https://assignment-1-1-1mvy.onrender.com`
 
-API นี้ออกแบบมาเพื่อ:
+## Feature
+
+API นี้ออกแบบมาเพื่อ :
 - ดึงข้อมูลการตั้งค่าของโดรนแต่ละตัว (config)
 - ตรวจสอบสถานะปัจจุบันของโดรน (status)
 - บันทึกข้อมูล log อุณหภูมิ สถานที่ และชื่อโดรน (log)
 
 ---
 
-## Features & Test
+## Test
 
-- **GET `/configs/:droneId`** → ดึงข้อมูล Config ของโดรน
+- **GET `/configs/:droneId`** : ดึงข้อมูล Config ของโดรน
   ```bash
   curl https://assignment-1-1-1mvy.onrender.com/configs/66010262
   ```
 
-- **GET `/status/:droneId`** → ดึงสถานะ ของโดรน
+- **GET `/status/:droneId`** : ดึงสถานะ ของโดรน
   ```bash
   curl https://assignment-1-1-1mvy.onrender.com/status/66010262
   ```
 
-- **GET `/logs/:droneId`** → ดึง Logs การทำงานของโดรน
+- **GET `/logs/:droneId`** : ดึง Logs การทำงานของโดรน
   ```bash
   curl https://assignment-1-1-1mvy.onrender.com/logs/66010262
   ```
 
-- **POST `/logs`** → สร้าง Log record ใหม่
+- **POST `/logs`** : สร้าง Log record ใหม่
   ```bash
   curl -X POST https://assignment-1-1-1mvy.onrender.com/logs\
     -H "Content-Type: application/json" \
@@ -40,7 +44,7 @@ API นี้ออกแบบมาเพื่อ:
 
 ---
 
-## การติดตั้งและรัน (Local)
+## Local Development
 
 ตรวจสอบว่า Node และ npm พร้อมใช้งาน:
 
